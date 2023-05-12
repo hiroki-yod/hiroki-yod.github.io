@@ -23,9 +23,11 @@
         </a-scene>
         
         <script>
-            document.querySelector('#sample').addEventListener('click', function() {
+            function BoxClick() {
                 window.location.href = "https://hiroki-yod.com";
             }
+            let box = document.getElementById('sample');
+            box.addEventListener('click', boxClick);
         </script>
     </body>
 </html>

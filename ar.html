@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene
+            vr-mode-ui="enabled: false;"
+            renderer="logarithmicDepthBuffer: true;"
+            embedded
+            arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+        >
+            <a-marker type="pattern" url="./apple.patt">
+                <a-box
+                color="#4488FF"
+                position="0 0 0"
+                rotation="0 0 0"
+                animation="property: rotation; to: 360 360 0; dur: 3600; easing: linear; loop: true"
+                >
+                </a-box>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>

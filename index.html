@@ -10,6 +10,10 @@
             embedded
             arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
         >
+            <a-assets>
+                <a-asset-item id="apple" src="./apple.glb"></a-asset-item>
+            </a-assets>
+            
             <a-marker type="pattern" url="./apple.patt">
                 <a-box
                 color="#4488FF"
@@ -19,6 +23,12 @@
                 id="sample"
                 >
                 </a-box>
+                <a-entity
+                  position="0 0 0"
+                  scale="0.05 0.05 0.05"
+                  gltf-model="#apple"
+                >
+                </a-entity>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>

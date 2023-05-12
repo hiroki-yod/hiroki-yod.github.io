@@ -11,14 +11,16 @@
             arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
         >
             <a-assets>
-                <a-asset-item id="apple" src="./apple.glb"></a-asset-item>
+                <a-asset-item id="cat-obj" src="./cat.obj"></a-asset-item>
+                <a-asset-item id="cat-mtl" src="./cat.mtl"></a-asset-item>
             </a-assets>
             
             <a-marker type="pattern" url="./apple.patt">
                 <a-entity
                   position="0 0 0"
-                  scale="0.05 0.05 0.05"
-                  gltf-model="#apple"
+                  scale="0.1 0.1 0.1"
+                  src="cat-obj"
+                  mtl="cat-mtl"
                   id="sample"
                 >
                 </a-entity>

@@ -15,11 +15,17 @@
                 position="0 0 0"
                 rotation="0 0 0"
                 animation="property: rotation; to: 360 360 0; dur: 3600; easing: linear; loop: true"
-                link="href: https://hiroki-yod.com; title: Hiroki Yoda Portfolio;"
+                id="sample"
                 >
                 </a-box>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
+        
+        <script>
+            document.querySelector('#sample').addEventListener('click', function() {
+                window.location.href = "https://hiroki-yod.com";
+            }
+        </script>
     </body>
 </html>

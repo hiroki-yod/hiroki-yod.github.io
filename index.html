@@ -14,23 +14,25 @@
                 <a-asset-item id="10026_Horse_v01-it2-obj" src="./10026_Horse_v01-it2.obj"></a-asset-item>
                 <a-asset-item id="10026_Horse_v01-it2-mtl" src="./10026_Horse_v01-it2.mtl"></a-asset-item>
             </a-assets>
-            
+
             <a-marker type="pattern" url="./apple.patt">
                 <a-entity>
                     <a-obj-model
-                      position="0 0 0"
-                      scale="0.001 0.001 0.001"
-                      rotation="270 0 0"
-                      src="#10026_Horse_v01-it2-obj"
-                      mtl="#10026_Horse_v01-it2-mtl"
-                      id="sample"
+                        position="0 0 0"
+                        scale="0.0012 0.0012 0.0012"
+                        rotation="270 0 0"
+                        src="#10026_Horse_v01-it2-obj"
+                        mtl="#10026_Horse_v01-it2-mtl"
+                        id="sample"
                     >
                     </a-obj-model>
+                    <a-light type="ambient" color="#888"></a-light>
+                    <a-light type="directional" color="#FFF" position="2 4 -3"></a-light>
                 </a-entity>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
-        
+
         <script>
             function boxClick() {
                 window.location.href = "https://hiroki-yod.com";
